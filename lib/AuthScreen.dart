@@ -118,8 +118,8 @@ class AuthScreenState extends State<AuthScreen>
     return new GestureDetector(
       onTap: () {
         if(txtEmail.text.length <1){
-          Constants().validateEmail("${txtEmail.text}");
-          //Constants().showAlertMessage("Please enter Email Address");
+          //Constants().validateEmail("${txtEmail.text}");
+          Constants().showAlertMessage("Please enter Email Address");
           return;
 
         }
